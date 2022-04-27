@@ -6,7 +6,7 @@ const getData = async (url) => {
   return result.data;
 };
 
-module.exports.getPokemons = async () => {
+const getPokemons = async () => {
   const requestPokemons = await getData(URL_API_BASE + "/pokemon");
 
   let pockemons = [];
@@ -64,6 +64,4 @@ const getLocationsArea = async (url) => {
   return locationsArea;
 };
 
-const getNumber = async (url) => {
-  const numberPokemon = await getData;
-};
+export default getPokemons;

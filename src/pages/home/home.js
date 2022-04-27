@@ -1,13 +1,8 @@
 import React, { useState } from "react";
-import { getPokemons } from "../../core/repositories/pokemons.repository";
 import PokemonCard from "../../components/pokemon-card";
 import useAsyncHook from "../../core/hooks/hooks";
-import PokemonErrors from "../../components/pokemons-errors";
 import PokemonLoading from "../../components/pokemons-loading";
 import PokemonDetils from "../../components/container";
-import container from "../../components/container";
-
-import { useAsync } from "react-async";
 
 const Home = () => {
   const [pokemons, error, loading] = useAsyncHook();

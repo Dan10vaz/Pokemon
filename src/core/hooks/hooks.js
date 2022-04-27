@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { getPokemons } from "../../core/repositories/pokemons.repository";
+import getPokemons from "../../core/repositories/pokemons.repository";
 
 const useAsyncHook = (search) => {
   let [pokemons, setPokemons] = useState([]);
